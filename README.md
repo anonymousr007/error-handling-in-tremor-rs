@@ -1,1 +1,1 @@
-# error-handling-in-tremor-rs
+# Error Handling in Tremor Runtime
