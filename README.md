@@ -37,16 +37,16 @@
   - eyre - Construct an ad-hoc error from a string.
 - Structs
   - Chain -	Iterator of a chain of source errors.
-  - DefaultHandler - The default provided error report handler for eyre::Report.
-  - InstallError - Error indicating that set_hook was unable to install the provided ErrorHook
+  - DefaultHandler - The default provided error report handler for `eyre::Report`.
+  - InstallError - Error indicating that `set_hook` was unable to install the provided ErrorHook
   - Report - The core error reporting type of the library, a wrapper around a dynamic error reporting type.
 - Traits
-  - ContextCompat - Provides the context method for Option when porting from anyhow
-  - EyreHandler - Error Report Handler trait for customizing eyre::Report
-  - WrapErr - Provides the wrap_err method for Result.
+  - ContextCompat - Provides the `context` method for `Option` when porting from `anyhow`
+  - EyreHandler - Error Report Handler trait for customizing `eyre::Report`
+  - WrapErr - Provides the `wrap_err` method for `Result`.
 - Functions
   - set_hook - Install the provided error hook for constructing EyreHandlers when converting Errors to Reports
 - Type Definitions
-  - Result - type alias for Result<T, Report>
+  - Result - type alias for `Result<T, Report>`.
 
 ## color_eyre
