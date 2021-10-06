@@ -6,7 +6,7 @@ use tremor_influx as influx;
 
 impl Clone for Error {
     fn clone(&self) -> Self {
-        ErrorKind::ClonedError(format!("{}", self)).into()
+        Error::ClonedError(format!("{}", self)).into()
     }
 }
 
@@ -184,53 +184,27 @@ pub enum Error {
         RustlsError((#[from] rustls::TLSError);
         #[error(transparent)]
         Hex((#[from] hex::FromHexError);
-}
-error_chain! {
-    links {
-        Script(tremor_script::errors::Error, tremor_script::errors::ErrorKind);
-        Pipeline(tremor_pipeline::errors::Error, tremor_pipeline::errors::ErrorKind);
-    }
-    foreign_links {
+        #[error("Unknown operator: {}::{}", n, o)]
+        UnknownOp(n: String, o: String)
+        #[error("The artifact was not found: {}", id)]
+        ArtefactNotFound(id: String)
+        
+        #[error(("The published {} already exists.", key)]
+        PublishFailedAlreadyExists(key: String)
+        
+        #[error("The unpublished {} does not exist.", key)]
+        UnpublishFailedDoesNotExist(key: String)
+        
+        #[error("Cannot unpublish artefact {} which has non-zero instances.", key)]
+        UnpublishFailedNonZeroInstances(key: String)
+        
+        #[error("Cannot unpublish system artefact {}.", key)]
+        UnpublishFailedSystemArtefact(key: String)
+        #[error("The binding with the id {} already exists.", key)]
+        BindFailedAlreadyExists(key: String)
+        #[error("Failed to bind non existand {}.", key)]
+        BindFailedKeyNotExists(key: String)
        
-    }
-
-    errors {
-        UnknownOp(n: String, o: String) {
-            description("Unknown operator")
-                display("Unknown operator: {}::{}", n, o)
-        }
-        ArtefactNotFound(id: String) {
-            description("The artifact was not found")
-                display("The artifact was not found: {}", id)
-        }
-        PublishFailedAlreadyExists(key: String) {
-            description("The published artefact already exists")
-                display("The published {} already exists.", key)
-        }
-
-        UnpublishFailedDoesNotExist(key: String) {
-            description("The unpublished artefact does not exist")
-                display("The unpublished {} does not exist.", key)
-        }
-        UnpublishFailedNonZeroInstances(key: String) {
-            description("The artefact has non-zero instances and cannot be unpublished")
-                display("Cannot unpublish artefact {} which has non-zero instances.", key)
-        }
-        UnpublishFailedSystemArtefact(key: String) {
-            description("The artefact is a system artefact and cannot be unpublished")
-                display("Cannot unpublish system artefact {}.", key)
-        }
-
-        BindFailedAlreadyExists(key: String) {
-            description("The binding already exists")
-                display("The binding with the id {} already exists.", key)
-        }
-
-        BindFailedKeyNotExists(key: String) {
-            description("Failed to bind non existand artefact")
-                display("Failed to bind non existand {}.", key)
-        }
-
         // TODO: Old errors, verify if needed
         ClonedError(t: String) {
             description("This is a cloned error we need to get rod of this")
@@ -291,4 +265,10 @@ error_chain! {
     }
 }
 
+error_chain! {
+    links {
+        Script(tremor_script::errors::Error, tremor_script::errors::ErrorKind);
+        Pipeline(tremor_pipeline::errors::Error, tremor_pipeline::errors::ErrorKind);
+    }
+    errors {
 ```
