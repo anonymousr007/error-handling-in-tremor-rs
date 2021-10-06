@@ -12,9 +12,6 @@
 
 ## anyhow (for applications)
 
-* a trait object based error type for easy idiomatic error handling in Rust applications.
-* 
-
 - Macros
   - anyhow - Construct an ad-hoc error from a string or existing non-anyhow error value.
   - bail - Return early with an error.
@@ -26,8 +23,6 @@
   - Context - Provides the context method for Result.
 - Type Definitions
   - Result - Result<T, Error>
-
-## thiserror (for libraries)
 
 ## eyre
 
@@ -48,5 +43,3 @@
   - set_hook - Install the provided error hook for constructing EyreHandlers when converting Errors to Reports
 - Type Definitions
   - Result - type alias for `Result<T, Report>`.
-
-## color_eyre
