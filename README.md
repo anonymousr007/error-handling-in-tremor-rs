@@ -571,3 +571,13 @@ See also :
   - set_hook - Install the provided error hook for constructing EyreHandlers when converting Errors to Reports
 - Type Definitions
   - Result - type alias for `Result<T, Report>`.
+
+  
+  
+  
+  
+  
+  
+## References
+  
+* 
