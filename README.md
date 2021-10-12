@@ -3,11 +3,17 @@
 ## Error Handling is fun :smile:
 
 ![](https://github.com/anonymousr007/error-handling-in-tremor-rs/blob/main/screenshots/IMG_20211012_233009.jpg)
-## References
 
-* https://github.com/shigedangao/qi/pull/2/files
-* https://github.com/Shemnei/punktf/pull/17/files
-* https://github.com/optopodi/optopodi/pull/51/files
+## Matrix Evaluation of different crates of error handling
+
+| S.No. | anyhow + thiserror | eyre + color-eyre |
+| ----- | ------------------ | ----------------- |
+| 1.    | | |
+| 2.    | | |
+| 3.    | | |
+| 4.    | | |
+| 5.    | | |
+| 6.    | | |
 
 ## Crates for Error Handling 
 
@@ -32,3 +38,9 @@
   - https://docs.rs/thiserror/1.0.30 [**Docs**]
   - https://github.com/dtolnay/thiserror [**Github**]
  
+## References
+
+* https://github.com/shigedangao/qi/pull/2/files
+* https://github.com/Shemnei/punktf/pull/17/files
+* https://github.com/optopodi/optopodi/pull/51/files
+
