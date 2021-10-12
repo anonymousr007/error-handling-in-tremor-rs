@@ -2,7 +2,7 @@
 
 ## Error Handling is fun :smile:
 
-## Error = (More Code)^2
+![](https://github.com/anonymousr007/error-handling-in-tremor-rs/blob/main/screenshots/IMG_20211012_233009.jpg)
 ## References
 
 * https://github.com/shigedangao/qi/pull/2/files
