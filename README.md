@@ -9,26 +9,26 @@
 * https://github.com/Shemnei/punktf/pull/17/files
 * https://github.com/optopodi/optopodi/pull/51/files
 
-## Crates
+## Crates for Error Handling 
 
-- Anyhow
-  -  https://crates.io/crates/anyhow
-  -  https://docs.rs/anyhow/1.0.44
-  -  https://github.com/rust-lang-nursery/error-chain
-- Color-eyre
-  - https://crates.io/crates/color-eyre
-  - https://docs.rs/color-eyre/0.5.11
-  - https://github.com/yaahc/color-eyre
-- Eyre
-  - https://crates.io/crates/eyre
-  - https://docs.rs/eyre/0.6.5
-  - https://github.com/yaahc/eyre
-- Error-chain [ Deprecated ]
-  - https://crates.io/crates/error-chain
-  - https://docs.rs/error-chain/0.12.4
-  - https://github.com/rust-lang-nursery/error-chain
+- anyhow
+  -  https://crates.io/crates/anyhow [**Crate**]
+  -  https://docs.rs/anyhow/1.0.44 [**Docs**]
+  -  https://github.com/dtolnay/anyhow [**Github**]
+- color-eyre
+  - https://crates.io/crates/color-eyre [**Crate**]
+  - https://docs.rs/color-eyre/0.5.11 [**Docs**]
+  - https://github.com/yaahc/color-eyre [**Github**]
+- error-chain [ Deprecated ]
+  - https://crates.io/crates/error-chain [**Crate**]
+  - https://docs.rs/error-chain/0.12.4 [**Docs**]
+  - https://github.com/rust-lang-nursery/error-chain [**Github**]
+- eyre
+  - https://crates.io/crates/eyre [**Crate**]
+  - https://docs.rs/eyre/0.6.5 [**Docs**]
+  - https://github.com/yaahc/eyre [**Github**]
 - thiserror
-  - https://crates.io/crates/thiserror
-  - https://docs.rs/thiserror/1.0.30
-  - https://github.com/dtolnay/thiserror
+  - https://crates.io/crates/thiserror [**Crate**]
+  - https://docs.rs/thiserror/1.0.30 [**Docs**]
+  - https://github.com/dtolnay/thiserror [**Github**]
  
