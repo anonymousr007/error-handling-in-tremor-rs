@@ -6,8 +6,8 @@
 
 ## Matrix Evaluation of different crates of error handling
 
-| S.No. | anyhow + thiserror | eyre + color-eyre |
-| ----- | ------------------ | ----------------- |
+| S.No. | anyhow | eyre + color-eyre |
+| ----- | ------ | ----------------- |
 | 1.    | | |
 | 2.    | | |
 | 3.    | | |
