@@ -22,7 +22,7 @@
 - error-chain [ Deprecated ]
   - https://crates.io/crates/error-chain [**Crate**]
   - https://docs.rs/error-chain/0.12.4 [**Docs**]
-  - https://github.com/rust-lang-nursery/error-chain [**Github**]
+  - https://github.com/rust-lang-deprecated/error-chain [**Github**]
 - eyre
   - https://crates.io/crates/eyre [**Crate**]
   - https://docs.rs/eyre/0.6.5 [**Docs**]
