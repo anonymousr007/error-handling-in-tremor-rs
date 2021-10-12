@@ -2,6 +2,7 @@
 
 ## Error Handling is fun :smile:
 
+## Error = (More Code)^2
 ## References
 
 * https://github.com/shigedangao/qi/pull/2/files
