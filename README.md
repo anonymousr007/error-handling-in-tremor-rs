@@ -43,4 +43,19 @@
 * https://github.com/shigedangao/qi/pull/2/files
 * https://github.com/Shemnei/punktf/pull/17/files
 * https://github.com/optopodi/optopodi/pull/51/files
+* https://github.com/stratis-storage/stratisd/pull/2737/files
+* https://github.com/tremor-rs/tremor-runtime/pull/1077/files
+* https://github.com/tremor-rs/tremor-runtime/search?q=error_chain
+* https://doc.rust-lang.org/rust-by-example/fn/closures.html
+* https://github.com/justinbarclay/card-counter/pull/15/files
+* https://github.com/stratis-storage/devicemapper-rs/pull/671
+* https://github.com/georust/gpx/pull/58/files
+* https://github.com/stratis-storage/stratisd/pull/2737/files
+* 
+
+
+
+
+
+
 
