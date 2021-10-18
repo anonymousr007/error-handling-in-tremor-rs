@@ -6,4 +6,8 @@
 2. map_err
 3. expect
 4. errorkind
-5. 
+
+## Important
+
+1. `thiserror` is used for multiple-errors in errors.rs files.
+2. `chain_err` found in 2 files `src/codec/binflux.rs`, `tremor-script/src/lexer.rs`
