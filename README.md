@@ -1,12 +1,11 @@
-# Error Handling in Tremor Runtime
-
-## Error Handling is fun :smile:
+<h1 align=center>Error Handling in Tremor Runtime</h1>
+<h2 align=center>Error Handling is fun :smile:</h2>
 
 ![](https://github.com/anonymousr007/error-handling-in-tremor-rs/blob/main/screenshots/IMG_20211012_233009.jpg)
 
 ## Matrix Evaluation of different crates of error handling
 
-| S.No. | anyhow | eyre + color-eyre |
+| S.No. | Error-Chain | anyhow + thiserror |
 | ----- | ------ | ----------------- |
 | 1.    | | |
 | 2.    | | |
